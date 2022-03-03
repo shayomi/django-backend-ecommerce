@@ -1,0 +1,21 @@
+{% extends 'Art/base.html' %}
+
+{% block body_block %}
+
+
+<h1> Create your new  Item </h1>
+
+<form class="create_item" action="" method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit"  class = "btn btn primary" name="">Post Item</button>
+</form>
+
+
+<script> var editor = new MediumEditor('.editable');</script>
+
+
+
+
+
+{% endblock %}
